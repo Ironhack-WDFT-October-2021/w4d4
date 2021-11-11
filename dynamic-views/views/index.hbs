@@ -1,0 +1,17 @@
+
+<h1>This is the index view</h1>
+{{#if user}}
+	<h2>Welcome {{user.toUpperCase()}}, your password is {{password}}</h2>
+{{else}}
+	<h2>Welcome unknown user 👋</h2>
+{{/if}}
+
+<h2>Todo List: </h2>
+<ul>
+	{{#each list}}
+		<li>{{this}}</li>
+	{{/each}}
+</ul>
+
+{{!-- this string gets treated as html by using 3 {{{}}} --}}
+{{{heading}}}
